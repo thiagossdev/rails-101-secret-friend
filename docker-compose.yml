@@ -10,7 +10,7 @@ services:
 
   redis:
     image: 'redis'
-    command: redis-server --requirepass REDIS#2020!
+    command: redis-server
     ports:
       - '6379:6379'
     volumes:
