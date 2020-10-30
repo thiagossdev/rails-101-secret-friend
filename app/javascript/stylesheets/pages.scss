@@ -1,0 +1,25 @@
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.home {
+  margin-top: 15%;
+  .home-icon {
+    color: #e86252;
+    font-size: 24px;
+  }
+  .home-button {
+    background-color: #e86252;
+    color: #fff;
+  }
+  .subtitle {
+    color: #aaa;
+    margin-bottom: 30px;
+  }
+  .subtitle2 {
+    color: #e86252;
+    margin-bottom: 40px;
+  }
+}

@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails101SecretFriend</title>
+    <title>Our Secret Friend</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag %>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= render "shared/navbar" %>
+    </header>
+
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer>
+      <%= render "shared/footer" %>
+    </footer>
   </body>
 </html>

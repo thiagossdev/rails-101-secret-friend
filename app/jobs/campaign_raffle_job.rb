@@ -10,7 +10,6 @@ class CampaignRaffleJob < ApplicationJob
     end
     campaign.update(status: :finished)
 
-
     #if results == false
       # Send mail to owner of campaign (desafio)
     #end
