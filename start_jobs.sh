@@ -1,2 +1,2 @@
 # Roda os jobs
-bundle exec sidekiq -q emails
+bundle exec sidekiq -e $RAILS_ENV -q emails
